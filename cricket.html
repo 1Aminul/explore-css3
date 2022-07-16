@@ -24,9 +24,22 @@
                 position: relative;
                 left: 515px;
                 transition: transform 1s ease-out 0.3s;
+                animation: cricket-ball 3s ease-in-out 4 infinite alternate;
+                animation-play-state: running;
+               
             }
-            .field:hover .ball{
+            /* .field:hover .ball{
                 transform: translate(770px, -200px);
+            } */
+            @keyframes cricket-ball {
+               from{
+                    top: 200px;
+                    left: 700px;
+                }
+                to{
+                    top: -200px;
+                    left: -700px;
+                }
             }
         </style>
         
